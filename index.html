@@ -1,16 +1,61 @@
 <html>
   <head>
-    <title>Gurdwara sahib,sainpur</title>
-    <link rel="shortcut icon" href="Logogurdwara.ico">
+    <title>Gurudwara Sahib, Sainpur</title>
+    <link rel="fav icon" href="./Logogurdwara.ico" />
     <style>
-        h4{
-            color:#FC185A;
+        /* HOW THAT ERROR GOT SOLVED? */
+        /* Explanation:- How that spacing problem got solved? It was because I forgot to use * for selecting all.
+         * is used for selecting all and when we do the following it just removes all the margin and padding. 
+         These margins and paddings are inbuild in HTML.  */
+      *{
+            margin: 0px;
+            padding-top: 0px;
+        }
+        .home{
+            background-color: crimson;
+        }
+
+        /* QUICK EXPLANATION! */
+        /* Why we used justify-content: center; and align-items: center; 
+        1. justify-content is used to set horizontal alignment of elements i.e tags
+        2. align-items is used to set vertical alignment of elements i.e tags
+        */
+        .home_menu-header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            height: 80px;
+        }
+        .btns{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            /* Don't be overwhelmed with the font-family, if you type font-family: ;  AND press CTRL + SPACE BAR you will get many font families. Okay? */
         }
     </style>
   </head>
   <body>
-      <h4>About Us
+    <div class="home">
+      <div class="home_menu-header">
+        <h4 class="btns">Home</h4>
+        <h4 class="btns">About</h4>
+        <h4 class="btns">Gurbani</h4>
+        <h4 class="btns">Hukumnama</h4>
+        <h4 class="btns">Live Kirtan</h4>
 
-      </h4>
+        <!-- I hope you have understood the above code.
+        SO now you must be wondering how to make these h4's or btns clickable right?  
+        NOW I M NOT going to tell you that, you have to search for ANCHOR TAG on GOOGLE and try to implement it and we will 
+        see how good your googling skills are. and can also try to implement image and search for it on google too or watch a video on YOUTUBE, Best of luck.
+        -->
+      </div>
+    </div>
   </body>
 </html>
+
+
+<!-- IMPORTANT 
+    USE THIS LINK TO LEARN HTML
+    https://www.w3schools.com/ 
+    THIS IS VERY USEFUL WESBITE
+-->
