@@ -3,56 +3,56 @@
     <title>Gurudwara Sahib, Sainpur</title>
     <link rel="fav icon" href="./Logogurdwara.ico" />
     <style>
-        /* HOW THAT ERROR GOT SOLVED? */
-        /* Explanation:- How that spacing problem got solved? It was because I forgot to use * for selecting all.
+      /* HOW THAT ERROR GOT SOLVED? */
+      /* Explanation:- How that spacing problem got solved? It was because I forgot to use * for selecting all.
          * is used for selecting all and when we do the following it just removes all the margin and padding. 
          These margins and paddings are inbuild in HTML.  */
-      *{
-            margin: 0px;
-            padding-top: 0px;
-        }
-        .home{
-            background-color: crimson;
-        }
+      * {
+        margin: 0px;
+        padding-top: 0px;
+      }
+      .home {
+      }
 
-        /* QUICK EXPLANATION! */
-        /* Why we used justify-content: center; and align-items: center; 
+      /* QUICK EXPLANATION! */
+      /* Why we used justify-content: center; and align-items: center; 
         1. justify-content is used to set horizontal alignment of elements i.e tags
         2. align-items is used to set vertical alignment of elements i.e tags
         */
-        .home_menu-header{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            height: 80px;
-        }
-        .btns{
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            /* Don't be overwhelmed with the font-family, if you type font-family: ;  AND press CTRL + SPACE BAR you will get many font families. Okay? */
-        }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        height: 50px;
+        background-color: crimson;
+      }
+      .menu {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        /* Don't be overwhelmed with the font-family, if you type font-family: ;  AND press CTRL + SPACE BAR you will get many font families. Okay? */
+      }
     </style>
   </head>
   <body>
     <div class="home">
-      <div class="home_menu-header">
-        <h4 class="btns">Home</h4>
-        <h4 class="btns">About</h4>
-        <h4 class="btns">Gurbani</h4>
-        <h4 class="btns">Hukumnama</h4>
-        <h4 class="btns">Live Kirtan</h4>
-
-        <!-- I hope you have understood the above code.
-        SO now you must be wondering how to make these h4's or btns clickable right?  
-        NOW I M NOT going to tell you that, you have to search for ANCHOR TAG on GOOGLE and try to implement it and we will 
-        see how good your googling skills are. and can also try to implement image and search for it on google too or watch a video on YOUTUBE, Best of luck.
-        -->
-      </div>
+      <div class="header">
+        <h3 class="menu">Home</h3>
+        <a href="https://www.facebook.com/" class="menu">
+          <h3 class="menu">About</h3></a
+        >
+        <a href=" https://www.youtube.com/watch?v=dPHGV7yubtM" class="menu">
+        <h3 class="menu">Gurbani</h3></a>
+        <h3 class="menu">Hukumnama</h3>
+        <h3 class="menu">Live Kirtan</h3>
+        <h3 class="menu">Contact Us</h3>
+      </div> 
+      <img src="https://images.unsplash.com/photo-1583821017783-4333717df070?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Z29sZGVuJTIwdGVtcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"  alt="harimandir sahib pic" />   
+  
     </div>
   </body>
 </html>
-
 
 <!-- IMPORTANT 
     USE THIS LINK TO LEARN HTML
